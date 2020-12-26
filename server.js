@@ -89,7 +89,7 @@ server.get(
 
 // Connects a port number on the server
 server.listen(
-    3001, 
+    process.env.PORT || 3001, 
     ()=>{
         console.log('server is running on http://localhost:3001');
     }
